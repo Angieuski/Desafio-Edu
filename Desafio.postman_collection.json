@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "b4442dbc-36d4-4ee4-bd91-953e20761da2",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32814097"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/uis",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "angieuski",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "juan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Primeiro Usuário\",\r\n    \"email\": \"primeiro@gmail.com\",\r\n    \"senha\": \"Senhanumeroum11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/uis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"uis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/uis",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "angieuski",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "juan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/uis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"uis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/uis/id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "angieuski",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "juan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Ereshkigal\",\r\n        \"email\": \"mesopotamia@gmail.com\",\r\n        \"senha\": \"BlessingOfKur\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/uis/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"uis",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/uis/id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "angieuski",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "juan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/uis/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"uis",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
