@@ -1,0 +1,12 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /uis                      --> main.main.func1 (6 handlers)
+[GIN-debug] POST   /uis                      --> main.main.func2 (6 handlers)
+[GIN-debug] PUT    /uis/:id                  --> main.main.func3 (6 handlers)
+[GIN-debug] DELETE /uis/:id                  --> main.main.func4 (6 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [08 Feb 24 17:40 -03] PUT /uis/2 400 5.5251ms 
